@@ -1,0 +1,43 @@
+.MovieFinder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.MovieFinderFormContainer {
+    height: 100%;
+}
+
+.MovieFinderViewContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0d0c;
+}
+
+.Content {
+    overflow: auto;
+    height: 94vh;
+}
+
+.NoContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (min-width: 1200px) {
+    .MovieFinder {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .MovieFinderFormContainer {
+        height: 100vh;
+        width: 600px;
+    }
+}

@@ -1,0 +1,45 @@
+.SortingControl {
+    display: inline-flex;
+    padding: 10px 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    user-select: none;
+    margin-top: 5px;
+}
+
+.SortingControl.Active {
+    border-bottom: 3px solid #373700;
+    margin-bottom: -3px;
+}
+@media (max-width: 450px) {
+    .SortingControl {
+        padding: 10px 5px;
+    }
+}
+@media (hover: hover) {
+    .SortingControl:hover {
+        cursor: pointer;
+        transition: background-color 400ms linear;
+
+        border-bottom: 3px solid #5d5d00;
+        margin-bottom: -3px;
+    }
+    /*.SortingControl:hover .Title{*/
+    /*    transition: color 400ms linear;*/
+    /*    color: black;*/
+    /*}*/
+    /*.SortingControl:hover .Icon{*/
+    /*    transition: color 400ms linear;*/
+    /*    color: black;*/
+    /*}*/
+}
+
+.Title {
+    margin-right: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.Icon {
+    color: #d6d62e;
+}

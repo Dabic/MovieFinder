@@ -1,0 +1,41 @@
+.MovieFinderForm {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, black , #2C2B25);
+}
+@media (max-width: 1200px) {
+    .MovieFinderForm {
+        background-image: linear-gradient(to top, black, #2C2B25);
+    }
+}
+.Header {
+    height: 46.5px;
+    border-bottom: 3px solid #d6d62e;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header .Heading {
+    color: #d6d62e;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Header .Icon {
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.Form {
+    padding: 10px;
+}
+/*@media (min-width: 600px) {*/
+/*    .MovieFinderForm {*/
+/*        width: 500px;*/
+/*    }*/
+/*}*/

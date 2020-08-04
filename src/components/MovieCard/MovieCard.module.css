@@ -1,0 +1,153 @@
+.MovieCard {
+    position: relative;
+    display: block;
+    width: 95%;
+    height: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 200px -45px rgba(255,250,205, 0.5);
+}
+
+@media (hover: hover) {
+    .MovieCard:hover{
+        transform: scale(1.02);
+        box-shadow: 0px 0px 120px -55px rgba(255,250,205, 0.5);
+        transition: all 0.4s;
+    }
+}
+
+.MovieCard .Info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.MovieCard .Info .Header {
+    position: relative;
+    padding: 25px 25px 0 25px;
+    height: 40%;
+    text-align: left;
+}
+
+.MovieCard .Info .Header h1 {
+    color: #fff;
+    margin: 0;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+.MovieCard .Info .Header h4 {
+    color: #9ac7fa;
+    margin: 0;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-weight: 400;
+}
+
+.MovieCard .Info .Header .Minutes {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.13);
+}
+
+.MovieCard .Info .Header .Genre {
+    display: inline-block;
+    color: #cee4fd;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    margin-left: 10px;
+}
+
+.MovieCard .Info .Header .Poster {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+}
+
+.MovieCard .Info .Desc {
+    padding: 0 25px 25px 25px;
+    height: 50%;
+    text-align: left;
+}
+
+.MovieCard .Info .Desc .Plot {
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    color: #cfd6e1;
+}
+
+.MovieCard .Blur {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%; right: 0;
+    background-size: cover;
+    border-radius: 11px;
+}
+@media screen and (min-width: 768px) {
+    .Header {
+        width: 65%;
+    }
+
+    .Desc{
+        width: 50%;
+    }
+
+    .Info{
+        background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+    }
+
+    .Blur{
+        width: 80%;
+        background-position: -100% 10% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Poster {
+        display: none;
+    }
+    .MovieCard{
+        width: 95%;
+        margin: 70px auto;
+        min-height: 350px;
+        height: auto;
+    }
+
+    .Blur{
+        width: 100%;
+        background-position: 50% 50% !important;
+    }
+
+    .Header{
+        width: 100%;
+        margin-top: 85px;
+    }
+
+    .Desc{
+        width: 90%;
+        height: 100%;
+    }
+
+    .Info{
+        background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+        display: inline-grid;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Header h1 {
+        overflow-x: auto;
+    }
+
+}
+

@@ -1,0 +1,12 @@
+.SortingControls {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #d6d62e;
+    background-color: black;
+}
+
+/*@media all(max-width: ) {*/
+/*    */
+/*}*/
