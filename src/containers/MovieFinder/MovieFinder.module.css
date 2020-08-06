@@ -25,6 +25,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    color: #d6d62e;
+    padding: 30px;
 }
 
 @media (min-width: 1200px) {

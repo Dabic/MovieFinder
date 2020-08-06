@@ -16,6 +16,12 @@ const MovieFinderForm = props => {
 
     const [formData, setFormData] = useState(formConf);
 
+    /**
+     * @author Vladimir Dabic
+     * @param event: Event
+     * @param inputId: string
+     * @description Handles the input change on Input components by managing their state.
+     */
     const inputChangedHandler = (event, inputId) => {
         const updatedFormData = {...formData};
         const updatedFormElement = {...updatedFormData[inputId]};
@@ -61,7 +67,14 @@ const MovieFinderForm = props => {
                 {form}
             </div>
             <Button buttonType={'Success'}
-                    buttonClicked={() => props.onSubmit(formData['title'].value, formData['year'].value)}>Search</Button>
+                    buttonClicked={() => props.onSubmit(
+                        formData['title'].value,
+                        formData['year'].value,
+                        formData['genre'].value,
+                        formData['actors'].value,
+                        formData['plot'].value)}>
+                Search
+            </Button>
         </div>
     );
 };

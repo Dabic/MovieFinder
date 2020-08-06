@@ -5,7 +5,7 @@ const formConf = {
             type: 'text',
             placeholder: 'Movie Title'
         },
-        value: ''
+        value: 'Bad Boys'
     },
     year: {
         elementType: 'input',
